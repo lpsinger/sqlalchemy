@@ -958,7 +958,7 @@ except ImportError:
     _python_UUID = None
 
 
-IDX_USING = re.compile(r"^(?:btree|hash|gist|gin|[\w_]+)$", re.I)
+IDX_USING = re.compile(r"^(?:brin|btree|hash|gist|gin|spgist|[\w_]+)$", re.I)
 
 AUTOCOMMIT_REGEXP = re.compile(
     r"\s*(?:UPDATE|INSERT|CREATE|DELETE|DROP|ALTER|GRANT|REVOKE|"
